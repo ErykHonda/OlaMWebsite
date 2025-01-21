@@ -23,6 +23,14 @@ const photos2 = [
 function createPhotoGallery(photos, galleryContainerId) {
   const galleryContainer = document.getElementById(galleryContainerId);
 
+  if (!galleryContainer) {
+    console.error(`Container with ID '${galleryContainerId}' not found.`);
+    return;
+  }
+
+  // Clear existing content in case it's called multiple times
+  galleryContainer.innerHTML = "";
+
   // Loop through the photos array and create HTML elements
   photos.forEach((photo) => {
     const colDiv = document.createElement("div");
@@ -42,17 +50,21 @@ function createPhotoGallery(photos, galleryContainerId) {
   });
 }
 
+// Function to show the image in a modal
 function showImage(imageSrc, imageAlt) {
   const modalImage = document.getElementById("modalImage");
   const modalTitle = document.getElementById("modalTitle");
-  modalImage.src = imageSrc;
-  modalTitle.innerHTML = imageAlt;
+
+  if (modalImage && modalTitle) {
+    modalImage.src = imageSrc;
+    modalTitle.textContent = imageAlt;
+  } else {
+    console.error("Modal elements not found.");
+  }
 }
 
-// Create the gallery when the page is ready
-document.addEventListener("DOMContentLoaded", () =>
-  createPhotoGallery(photos1, "photo-gallery_graf")
-);
-document.addEventListener("DOMContentLoaded", () =>
-  createPhotoGallery(photos2, "photo-gallery_inst")
-);
+// Ensure the galleries are created when the page is fully loaded
+document.addEventListener("DOMContentLoaded", () => {
+  createPhotoGallery(photos1, "photo-gallery_graf");
+  createPhotoGallery(photos2, "photo-gallery_inst");
+});
