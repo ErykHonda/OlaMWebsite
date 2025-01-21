@@ -7,73 +7,15 @@
     <!-- Link do Bootstrapa -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-      .photo {
-        width: 100%; /* Obraz zajmie 100% szerokości kontenera */
-        max-width: 297mm; /* Maksymalna szerokość (pozioma) A4 */
-        max-height: 210mm; /* Maksymalna wysokość (pozioma) A4 */
-        object-fit: cover; /* Dopasowanie obrazu */
-        border: 1px solid #ddd; /* Dodatkowa ramka dla zdjęcia */
-        cursor: pointer; /* Wskaźnik jako ręka na hover */
-      }
-      .photo-container {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      .modal-body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-      }
-      #modalImage {
-        max-width: 100%; /* Maksymalna szerokość obrazu */
-        max-height: 90vh; /* Maksymalna wysokość obrazu - dopasowanie do ekranu */
-        object-fit: contain; /* Zachowanie proporcji obrazu */
-      }
-    </style>
+    <script src="js/javascript.js"></script>
   </head>
   <body>
     <div class="container my-5">
-      <h1 class="text-center mb-4">Galeria Zdjęć w Formacie Poziomym</h1>
-      <div class="row g-4">
-        <!-- Kolumna 1 -->
-        <div class="col-12 col-sm-6 col-lg-4 photo-container">
-          <img
-            src="img/lEDPIy5FVN-jIHPoEzs_V.jpg"
-            alt="Zdjęcie 1"
-            class="photo img-fluid"
-            data-bs-toggle="modal"
-            data-bs-target="#photoModal"
-            onclick="showImage('img/lEDPIy5FVN-jIHPoEzs_V.jpg')"
-          />
-        </div>
-        <!-- Kolumna 2 -->
-        <div class="col-12 col-sm-6 col-lg-4 photo-container">
-          <img
-            src="img/lEDPIy5FVN-jIHPoEzs_V.jpg"
-            alt="Zdjęcie 2"
-            class="photo img-fluid"
-            data-bs-toggle="modal"
-            data-bs-target="#photoModal"
-            onclick="showImage('img/lEDPIy5FVN-jIHPoEzs_V.jpg')"
-          />
-        </div>
-        <!-- Kolumna 3 -->
-        <div class="col-12 col-sm-6 col-lg-4 photo-container">
-          <img
-            src="img/lEDPIy5FVN-jIHPoEzs_V.jpg"
-            alt="Zdjęcie 3"
-            class="photo img-fluid"
-            data-bs-toggle="modal"
-            data-bs-target="#photoModal"
-            onclick="showImage('img/lEDPIy5FVN-jIHPoEzs_V.jpg')"
-          />
-        </div>
-      </div>
-    </div>
+      <h1 class="text-center mb-4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      </h1>
+    <div id="photo-gallery" class="row g-4"></div>
 
-    <!-- Modal -->
     <div
       class="modal fade"
       id="photoModal"
