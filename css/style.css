@@ -1,23 +1,23 @@
 .photo {
-    width: 100%; /* Obraz zajmie 100% szerokości kontenera */
-    max-width: 297mm; /* Maksymalna szerokość (pozioma) A4 */
-    max-height: 210mm; /* Maksymalna wysokość (pozioma) A4 */
-    object-fit: cover; /* Dopasowanie obrazu */
-    border: 1px solid #ddd; /* Dodatkowa ramka dla zdjęcia */
-    cursor: pointer; /* Wskaźnik jako ręka na hover */
-  }
-  .photo-container {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .modal-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
-  #modalImage {
-    max-width: 100%; /* Maksymalna szerokość obrazu */
-    max-height: 90vh; /* Maksymalna wysokość obrazu - dopasowanie do ekranu */
-    object-fit: contain; /* Zachowanie proporcji obrazu */
-  }
+  width: 100%; /* Obraz zajmie 100% szerokości kontenera */
+  max-width: 297mm; /* Maksymalna szerokość (pozioma) A4 */
+  max-height: 210mm; /* Maksymalna wysokość (pozioma) A4 */
+  object-fit: cover; /* Dopasowanie obrazu */
+  border: 1px solid #ddd; /* Dodatkowa ramka dla zdjęcia */
+  cursor: pointer; /* Wskaźnik jako ręka na hover */
+}
+.photo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+#modalImage {
+  max-width: 100%; /* Maksymalna szerokość obrazu */
+  max-height: 90vh; /* Maksymalna wysokość obrazu - dopasowanie do ekranu */
+  object-fit: contain; /* Zachowanie proporcji obrazu */
+}

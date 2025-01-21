@@ -5,6 +5,12 @@ const photos = [
     { src: 'img/lEDPIy5FVN-jIHPoEzs_V.jpg', alt: 'Zdjęcie 2' },
     { src: 'img/lEDPIy5FVN-jIHPoEzs_V.jpg', alt: 'Zdjęcie 2' },
     { src: 'img/lEDPIy5FVN-jIHPoEzs_V.jpg', alt: 'Zdjęcie 2' },
+    { src: 'img/lEDPIy5FVN-jIHPoEzs_V.jpg', alt: 'Zdjęcie 2' },
+    { src: 'img/lEDPIy5FVN-jIHPoEzs_V.jpg', alt: 'Zdjęcie 2' },
+    { src: 'img/lEDPIy5FVN-jIHPoEzs_V.jpg', alt: 'Zdjęcie 2' },
+    { src: 'img/lEDPIy5FVN-jIHPoEzs_V.jpg', alt: 'Zdjęcie 2' },
+    { src: 'img/lEDPIy5FVN-jIHPoEzs_V.jpg', alt: 'Zdjęcie 2' },
+    { src: 'img/lEDPIy5FVN-jIHPoEzs_V.jpg', alt: 'Zdjęcie 2' },
     { src: 'img/lEDPIy5FVN-jIHPoEzs_V.jpg', alt: 'Zdjęcie 3' }
   ];
   
