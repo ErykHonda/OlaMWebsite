@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria Zdjęć A4</title>
+    <!-- Link do Bootstrapa -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .photo {
+        width: 100%; /* Obraz zajmie 100% szerokości kontenera */
+        max-width: 297mm; /* Maksymalna szerokość (pozioma) A4 */
+        max-height: 210mm; /* Maksymalna wysokość (pozioma) A4 */
+        object-fit: cover; /* Dopasowanie obrazu */
+        border: 1px solid #ddd; /* Dodatkowa ramka dla zdjęcia */
+        cursor: pointer; /* Wskaźnik jako ręka na hover */
+      }
+      .photo-container {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .modal-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+      }
+      #modalImage {
+        max-width: 100%; /* Maksymalna szerokość obrazu */
+        max-height: 90vh; /* Maksymalna wysokość obrazu - dopasowanie do ekranu */
+        object-fit: contain; /* Zachowanie proporcji obrazu */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-center mb-4">Galeria Zdjęć w Formacie Poziomym</h1>
+      <div class="row">
+        <!-- Kolumna 1 -->
+        <div class="col-md-4 photo-container">
+          <img
+            src="img/lEDPIy5FVN-jIHPoEzs_V.jpg"
+            alt="Zdjęcie 1"
+            class="photo img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#photoModal"
+            onclick="showImage('img/lEDPIy5FVN-jIHPoEzs_V.jpg')"
+          />
+        </div>
+        <!-- Kolumna 2 -->
+        <div class="col-md-4 photo-container">
+          <img
+            src="img/lEDPIy5FVN-jIHPoEzs_V.jpg"
+            alt="Zdjęcie 2"
+            class="photo img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#photoModal"
+            onclick="showImage('img/lEDPIy5FVN-jIHPoEzs_V.jpg')"
+          />
+        </div>
+        <!-- Kolumna 3 -->
+        <div class="col-md-4 photo-container">
+          <img
+            src="img/lEDPIy5FVN-jIHPoEzs_V.jpg"
+            alt="Zdjęcie 3"
+            class="photo img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#photoModal"
+            onclick="showImage('img/lEDPIy5FVN-jIHPoEzs_V.jpg')"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="photoModal"
+      tabindex="-1"
+      aria-labelledby="photoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img
+              id="modalImage"
+              src=""
+              alt="Zdjęcie w pełnym rozmiarze"
+              class="img-fluid"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Zamknij
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skrypt Bootstrapa -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Funkcja do ustawiania obrazu w modalu
+      function showImage(src) {
+        document.getElementById("modalImage").src = src;
+      }
+    </script>
+  </body>
+</html>
